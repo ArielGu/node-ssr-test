@@ -1,0 +1,27 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "modules": false,
+        "targets": {
+          "browsers": [
+            "last 2 versions",
+            "Firefox ESR",
+            "> 1%",
+            "ie >= 9",
+            "iOS >= 8",
+            "Android >= 4"
+          ]
+        }
+      }
+    ],
+    "@babel/preset-react"
+  ],
+  "plugins": [
+    // "react-hot-loader/babel",
+    "@babel/plugin-transform-runtime"
+    // "@babel/plugin-proposal-function-bind",
+    // "@babel/plugin-proposal-class-properties"
+  ]
+}
